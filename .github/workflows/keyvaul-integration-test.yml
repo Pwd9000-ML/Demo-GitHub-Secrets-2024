@@ -1,6 +1,7 @@
 name: Azure Key Vault Integration Test
 
-on: [push]
+on:
+    workflow_dispatch:
 
 permissions:
   id-token: write

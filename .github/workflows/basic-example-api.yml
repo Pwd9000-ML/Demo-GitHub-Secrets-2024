@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Basic Example API
 
 on:
     workflow_dispatch:

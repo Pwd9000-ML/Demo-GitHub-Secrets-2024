@@ -6,7 +6,7 @@
   # Set variables
   $randomInt = Get-Random -Maximum 9999
   $subscriptionId = $(az account show --query "id" --output tsv)
-  $resourceGroupName = "Demo-GitHub-Secrets-2024"
+  $resourceGroupName = "GitHub-Secrets-Demo-2024"
   $location = "UKSouth"
   $keyVaultName = "ghSecretsVault$randomInt"
   $storageAccountName = "ghsecsa$randomInt"

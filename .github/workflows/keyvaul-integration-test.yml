@@ -29,18 +29,18 @@ jobs:
           azcliversion: latest
           inlineScript: |
             # Variables  
-            KEY_VAULT_NAME=ghSecretsVault3309
+            KEY_VAULT_NAME=ghSecretsVault1234
             SECRET_NAME=StorageAccountKey  
 
             # Retrieve secret from Key Vault  
             STORAGE_KEY=$(az keyvault secret show --name $SECRET_NAME --vault-name $KEY_VAULT_NAME --query value -o tsv)
 
             # Create a container in Azure Storage Account using the secret
-            az storage container create --name "ghrepocontainer" --account-name "ghsecsa3309" --account-key "$STORAGE_KEY"
+            az storage container create --name "ghrepocontainer" --account-name "ghsecsa1234" --account-key "$STORAGE_KEY"
 
             # Copy a text file saying "Hello World" to the container
             echo "Hello World" > hello.txt
-            az storage blob upload --container-name "ghrepocontainer" --file hello.txt --name hello.txt --account-name "ghsecsa3309" --account-key "$STORAGE_KEY"        
+            az storage blob upload --container-name "ghrepocontainer" --file hello.txt --name hello.txt --account-name "ghsecsa1234" --account-key "$STORAGE_KEY"        
 
             # You can also set the retrieved secret as an output for use in subsequent steps in the workflow  
             echo "::set-output name=secret_value::$STORAGE_KEY"

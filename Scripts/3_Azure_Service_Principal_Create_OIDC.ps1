@@ -1,12 +1,12 @@
 # Set variables
 $subscriptionId = $(az account show --query id -o tsv)
-$resourceGroupName = "Demo-GitHub-Secrets-2024" # Resource Group Name where Key Vault is located
-$keyVaultName = "ghSecretsVault3309" # Key Vault Name to access
+$resourceGroupName = "GitHub-Secrets-Demo-2024" # Resource Group Name where Key Vault is located
+$keyVaultName = "ghSecretsVault1234" # Key Vault Name to access
 $appName = "GitHub-projectName-Actions-OIDC" # App Registration Name
 $RBACRole = "Key Vault Secrets User" # RBAC Role to apply
 
 $githubOrgName = "Pwd9000-ML" # GitHub Organization/User Name
-$githubRepoName = "Demo-GitHub-Secrets-2024" # GitHub Repository Name
+$githubRepoName = "GitHub-Secrets-Demo-2024" # GitHub Repository Name
 $githubBranch = "master" # GitHub Branch Name
 
 # Create AAD App and Principal

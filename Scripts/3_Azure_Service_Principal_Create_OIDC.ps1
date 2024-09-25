@@ -6,7 +6,7 @@ $appName = "GitHub-projectName-Actions-OIDC" # App Registration Name
 $RBACRole = "Key Vault Secrets User" # RBAC Role to apply
 
 $githubOrgName = "Pwd9000-ML" # GitHub Organization/User Name
-$githubRepoName = "Integration-Test-Repo" # GitHub Repository Name
+$githubRepoName = "Demo-GitHub-Secrets-2024" # GitHub Repository Name
 $githubBranch = "master" # GitHub Branch Name
 
 # Create AAD App and Principal
